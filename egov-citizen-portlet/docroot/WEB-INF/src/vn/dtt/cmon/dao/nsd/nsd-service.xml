@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="vn.dtt.cmon.dao.nsd">
+	<author>Liemnn</author>
+	<namespace>EGOV</namespace>
+
+	<entity name="TaiKhoanNguoiDung" local-service="true"
+		remote-service="false" table="CMON_TAIKHOANNGUOIDUNG" data-source="egovDataSource" cache-enabled="false">
+
+		<!-- PK fields -->
+
+		<column name="id" db-name="ID" type="long" primary="true" />
+		<column name="tenDangNhap" db-name="TENDANGNHAP" type="String" />
+		<column name="matKhau" db-name="MATKHAU" type="String" />
+		<column name="tenNguoiDung" db-name="TENNGUOIDUNG" type="String" />
+		<column name="cauHoiMatKhau" db-name="CAUHOIMATKHAU" type="String" />
+		<column name="cauTraLoiMatKhau" db-name="CAUTRALOIMATKHAU"
+			type="String" />
+		<column name="email" db-name="EMAIL" type="String" />
+		<column name="ngayTao" db-name="NGAYTAO" type="Date" />
+		<column name="daXoa" db-name="DAXOA" type="int" />
+		<column name="ngaySua" db-name="NGAYSUA" type="Date" />
+		<column name="nguoiTao" db-name="NGUOITAO" type="String" />
+		<column name="nguoiSua" db-name="NGUOISUA" type="String" />
+		<column name="trangThai" db-name="TRANGTHAI" type="int" />
+		<column name="loaiDoiTuongId" db-name="LOAIDOITUONGID" type="Long" convert-null="false"/>		
+		<column name="taiKhoanNguoiDungId" db-name="TAIKHOANNGUOIDUNGID" type="Long" convert-null="false"/>
+
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="id" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="TenDangNhap" return-type="TaiKhoanNguoiDung">
+			<finder-column name="tenDangNhap" />
+		</finder>
+		<finder name="TenNguoiDung" return-type="Collection">
+			<finder-column name="tenNguoiDung" />
+		</finder>
+		<finder name="Email" return-type="Collection">
+			<finder-column name="email" />
+		</finder>
+		<finder name="TrangThai" return-type="Collection">
+			<finder-column name="daXoa" />
+		</finder>
+ 		<finder name="TaiKhoanNguoiDung" return-type="Collection">
+			<finder-column name="taiKhoanNguoiDungId" />
+			<finder-column name="daXoa" />
+		</finder>
+	</entity>
+
+
+</service-builder>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<portlet-app
+	version="2.0"
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+>
+	<portlet>
+		<portlet-name>citizen-registration</portlet-name>
+		<display-name>Citizen registration portlet</display-name>
+		<portlet-class>
+			vn.dtt.cmon.portlet.registration.action.UserRegActionPortlet</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/portlet/registration/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>add-process-action-success-action</name>
+			<value>false</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content/Language_userreg</resource-bundle>
+		<portlet-info>
+			<title>User registration portlet</title>
+			<short-title>UserRegActionPortlet</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>userendorseportlet</portlet-name>
+		<display-name>User Endorsement Portlet</display-name>
+		<portlet-class>vn.dtt.cmon.portlet.endorse.action.UserEndorsePortlet</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/portlet/endorse/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>add-process-action-success-action</name>
+			<value>false</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content/Language_endorse</resource-bundle>
+		<portlet-info>
+			<title>User Endorsement Portlet</title>
+			<short-title>UserEndorsePortlet</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+</portlet-app>

@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="vn.dtt.cmon.dao.cd.model.impl.CongDanModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ho">
+				<column name="HO" />
+			</basic>
+			<basic name="dem">
+				<column name="DEM" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="ngaySinh">
+				<column name="NGAYSINH" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="soCmnd">
+				<column name="SOCMND" />
+			</basic>
+			<basic name="ngayCapCmnd">
+				<column name="NGAYCAPCMND" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ghiChuCmnd">
+				<column name="GHICHUCMND" />
+			</basic>
+			<basic name="soHoChieu">
+				<column name="SOHOCHIEU" />
+			</basic>
+			<basic name="ngayCapHoChieu">
+				<column name="NGAYCAPHOCHIEU" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngayHetHanHoChieu">
+				<column name="NGAYHETHANHOCHIEU" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="noiCapHoChieuId">
+				<column name="NOICAPHOCHIEUID" />
+			</basic>
+			<basic name="ghiChuHoChieu">
+				<column name="GHICHUHOCHIEU" />
+			</basic>
+			<basic name="soBaoHiemYTe">
+				<column name="SOBAOHIEMYTE" />
+			</basic>
+			<basic name="maSoThueCaNhan">
+				<column name="MASOTHUECANHAN" />
+			</basic>
+			<basic name="diaChiThuongTru">
+				<column name="DIACHITHUONGTRU" />
+			</basic>
+			<basic name="diaChiHienNay">
+				<column name="DIACHIHIENNAY" />
+			</basic>
+			<basic name="dienThoaiCoDinh">
+				<column name="DIENTHOAICODINH" />
+			</basic>
+			<basic name="dienThoaiDiDong">
+				<column name="DIENTHOAIDIDONG" />
+			</basic>
+			<basic name="hoTenCha">
+				<column name="HOTENCHA" />
+			</basic>
+			<basic name="hoTenMe">
+				<column name="HOTENME" />
+			</basic>
+			<basic name="hoTenVoHoacChong">
+				<column name="HOTENVOHOACCHONG" />
+			</basic>
+			<basic name="soHoKhau">
+				<column name="SOHOKHAU" />
+			</basic>
+			<basic name="laChuHo">
+				<column name="LACHUHO" />
+			</basic>
+			<basic name="tinhTrangHonNhanId">
+				<column name="TINHTRANGHONNHANID" />
+			</basic>
+			<basic name="email">
+				<column name="EMAIL" />
+			</basic>
+			<basic name="trinhDoChuyenMonId">
+				<column name="TRINHDOCHUYENMONID" />
+			</basic>
+			<basic name="soDinhDanhChaId">
+				<column name="SODINHDANHCHAID" />
+			</basic>
+			<basic name="soDinhDanhVoHoacChongId">
+				<column name="SODINHDANHVOHOACCHONGID" />
+			</basic>
+			<basic name="danTocId">
+				<column name="DANTOCID" />
+			</basic>
+			<basic name="diaChiHienNayHuyenId">
+				<column name="DIACHIHIENNAYHUYENID" />
+			</basic>
+			<basic name="diaChiHienNayTinhId">
+				<column name="DIACHIHIENNAYTINHID" />
+			</basic>
+			<basic name="diaChiHienNayXaId">
+				<column name="DIACHIHIENNAYXAID" />
+			</basic>
+			<basic name="diaChiThuongTruHuyenId">
+				<column name="DIACHITHUONGTRUHUYENID" />
+			</basic>
+			<basic name="diaChiThuongTruTinhId">
+				<column name="DIACHITHUONGTRUTINHID" />
+			</basic>
+			<basic name="diaChiThuongTruXaId">
+				<column name="DIACHITHUONGTRUXAID" />
+			</basic>
+			<basic name="gioiTinh">
+				<column name="GIOITINHID" />
+			</basic>
+			<basic name="ngheNghiepId">
+				<column name="NGHENGHIEPID" />
+			</basic>
+			<basic name="noiSinhHuyenId">
+				<column name="NOISINHHUYENID" />
+			</basic>
+			<basic name="noiSinhTinhId">
+				<column name="NOISINHTINHID" />
+			</basic>
+			<basic name="noiSinhXaId">
+				<column name="NOISINHXAID" />
+			</basic>
+			<basic name="noiSinhChiTiet">
+				<column name="NOISINHCHITIET" />
+			</basic>
+			<basic name="noiCapCmndId">
+				<column name="NOICAPCMNDID" />
+			</basic>
+			<basic name="tonGiaoId">
+				<column name="TONGIAOID" />
+			</basic>
+			<basic name="soDinhDanhMeId">
+				<column name="SODINHDANHMEID" />
+			</basic>
+			<basic name="trinhDoHocVanId">
+				<column name="TRINHDOHOCVANID" />
+			</basic>
+			<basic name="taiKhoanNguoiDungId">
+				<column name="TAIKHOANNGUOIDUNGID" />
+			</basic>
+			<basic name="quanHeChuHoId">
+				<column name="QUANHECHUHOID" />
+			</basic>
+			<basic name="quocTichId">
+				<column name="QUOCTICHID" />
+			</basic>
+			<basic name="doanhNghiepId">
+				<column name="DOANHNGHIEPID" />
+			</basic>
+			<basic name="tenDayDu">
+				<column name="TENDAYDU" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.cd.model.impl.DanTocModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<basic name="laThieuSo">
+				<column name="LATHIEUSO" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="tenKhac">
+				<column name="TENKHAC" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.cd.model.impl.DoiTuongSuDungModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="mota">
+				<column name="MOTA" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="trangThai">
+				<column name="TRANGTHAI" />
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.cd.model.impl.GioiTinhModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.cd.model.impl.TonGiaoModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.cd.model.impl.YeuCauDangKyCongDanModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="NgayYeuCau">
+				<column name="NGAYYEUCAU" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="SoCmnd">
+				<column name="SOCMND" />
+			</basic>
+			<basic name="NgayCapCmnd">
+				<column name="NGAYCAPCMND" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="IDNoiCapCmnd">
+				<column name="NOICAPCMNDID" />
+			</basic>
+			<basic name="GhiChuCmnd">
+				<column name="GHICHUCMND" />
+			</basic>
+			<basic name="Email">
+				<column name="EMAIL" />
+			</basic>
+			<basic name="HoCongDan">
+				<column name="HOCONGDAN" />
+			</basic>
+			<basic name="HoVaTen">
+				<column name="HOVATEN" />
+			</basic>
+			<basic name="TenDem">
+				<column name="TENDEM" />
+			</basic>
+			<basic name="TenCongDan">
+				<column name="TENCONGDAN" />
+			</basic>
+			<basic name="NgaySinh">
+				<column name="NGAYSINH" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="GioiTinh">
+				<column name="GIOITINH" />
+			</basic>
+			<basic name="IDDanToc">
+				<column name="DANTOCID" />
+			</basic>
+			<basic name="IDQuocTich">
+				<column name="QUOCTICHID" />
+			</basic>
+			<basic name="IDTonGiao">
+				<column name="TONGIAOID" />
+			</basic>
+			<basic name="DienThoaiCoDinh">
+				<column name="DIENTHOAICODINH" />
+			</basic>
+			<basic name="DienThoaiDiDong">
+				<column name="DIENTHOAIDIDONG" />
+			</basic>
+			<basic name="IDTrinhDoHocVan">
+				<column name="TRINHDOHOCVANID" />
+			</basic>
+			<basic name="SoHoChieu">
+				<column name="SOHOCHIEU" />
+			</basic>
+			<basic name="NgayCapHoChieu">
+				<column name="NGAYCAPHOCHIEU" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="IDNoiCapHoChieu">
+				<column name="NOICAPHOCHIEUID" />
+			</basic>
+			<basic name="NgayHetHanHoChieu">
+				<column name="NGAYHETHANHOCHIEU" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="GhiChuHoChieu">
+				<column name="GHICHUHOCHIEU" />
+			</basic>
+			<basic name="SoBaoHiemYte">
+				<column name="SOBAOHIEMYTE" />
+			</basic>
+			<basic name="MaSoThueCaNhan">
+				<column name="MASOTHUECANHAN" />
+			</basic>
+			<basic name="IDNgheNghiep">
+				<column name="NGHENGHIEPID" />
+			</basic>
+			<basic name="IDTrinhDoChuyenMon">
+				<column name="TRINHDOCHUYENMONID" />
+			</basic>
+			<basic name="TinhTrangHonNhan">
+				<column name="TINHTRANGHONNHAN" />
+			</basic>
+			<basic name="HoVaTenCha">
+				<column name="HOVATENCHA" />
+			</basic>
+			<basic name="HoVaTenMe">
+				<column name="HOVATENME" />
+			</basic>
+			<basic name="HoVaTenVoChong">
+				<column name="HOVATENVOCHONG" />
+			</basic>
+			<basic name="SoHoKhau">
+				<column name="SOHOKHAU" />
+			</basic>
+			<basic name="ChuHo">
+				<column name="CHUHO" />
+			</basic>
+			<basic name="IDQuanHe">
+				<column name="QUANHEID" />
+			</basic>
+			<basic name="IDTinhThanhNoiSinh">
+				<column name="TINHTHANHNOISINHID" />
+			</basic>
+			<basic name="IDQuanHuyenNoiSinh">
+				<column name="QUANHUYENNOISINHID" />
+			</basic>
+			<basic name="IDPhuongXaNoiSinh">
+				<column name="PHUONGXANOISINHID" />
+			</basic>
+			<basic name="MoTaDiaChiNoiSinh">
+				<column name="MOTADIACHINOISINH" />
+			</basic>
+			<basic name="IDTinhThanhThuongTru">
+				<column name="TINHTHANHTHUONGTRUID" />
+			</basic>
+			<basic name="IDQuanHuyenThuongTru">
+				<column name="QUANHUYENTHUONGTRUID" />
+			</basic>
+			<basic name="IDPhuongXaThuongTru">
+				<column name="PHUONGXATHUONGTRUID" />
+			</basic>
+			<basic name="MoTaDiaChiThuongTru">
+				<column name="MOTADIACHITHUONGTRU" />
+			</basic>
+			<basic name="IDTinhThanhHienTai">
+				<column name="TINHTHANHHIENTAIID" />
+			</basic>
+			<basic name="IDQuanHuyenHienTai">
+				<column name="QUANHUYENHIENTAIID" />
+			</basic>
+			<basic name="IDPhuongXaHienTai">
+				<column name="PHUONGXAHIENTAIID" />
+			</basic>
+			<basic name="MoTaDiaChiHienTai">
+				<column name="MOTADIACHIHIENTAI" />
+			</basic>
+			<basic name="MaXacNhan">
+				<column name="MAXACNHAN" />
+			</basic>
+			<basic name="NgayChungThuc">
+				<column name="NGAYCHUNGTHUC" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NguoiChungThuc">
+				<column name="NGUOICHUNGTHUC" />
+			</basic>
+			<basic name="MaCongDanCha">
+				<column name="MACONGDANCHA" />
+			</basic>
+			<basic name="MaCongDanMe">
+				<column name="MACONGDANME" />
+			</basic>
+			<basic name="MaCongDanVoChong">
+				<column name="MACONGDANVOCHONG" />
+			</basic>
+			<basic name="MaCongDan">
+				<column name="MACONGDAN" />
+			</basic>
+			<basic name="LoaiYeuCau">
+				<column name="LOAIYEUCAU" />
+			</basic>
+			<basic name="TrangThaiYeuCau">
+				<column name="TRANGTHAIYEUCAU" />
+			</basic>
+			<basic name="NgayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NgaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="NguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="Xoa">
+				<column name="XOA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.CapCoQuanQuanLyModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="cap">
+				<column name="CAP" />
+			</basic>
+			<basic name="chaId">
+				<column name="CHAID" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.CapDonViHanhChinhModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="cap">
+				<column name="CAP" />
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="mota">
+				<column name="MOTA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.ChucVu2VaiTroModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="vaiTroId">
+				<column name="VAITROID" />
+			</basic>
+			<basic name="coQuanQuanLyId">
+				<column name="COQUANQUANLYID" />
+			</basic>
+			<basic name="chucVuId">
+				<column name="CHUCVUID" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.CoQuanHanhChinhSuNghiepModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="soDTDuongDayNong">
+				<column name="SDTDUONGDAYNONG" />
+			</basic>
+			<basic name="noiBo">
+				<column name="NOIBO" />
+			</basic>
+			<basic name="chucNang">
+				<column name="CHUCNANG" />
+			</basic>
+			<basic name="tongSoCBNV">
+				<column name="TONGSOCBNV" />
+			</basic>
+			<basic name="soDT">
+				<column name="SODIENTHOAI" />
+			</basic>
+			<basic name="fax">
+				<column name="FAX" />
+			</basic>
+			<basic name="email">
+				<column name="EMAIL" />
+			</basic>
+			<basic name="tongSoGiuongBenh">
+				<column name="TONGSOGIUONGBENH" />
+			</basic>
+			<basic name="viDo">
+				<column name="VIDO" />
+			</basic>
+			<basic name="kinhDo">
+				<column name="KINHDO" />
+			</basic>
+			<basic name="diaChiCoQuanHCSNXaId">
+				<column name="DIACHICOQUANHCSNXAID" />
+			</basic>
+			<basic name="tuyenId">
+				<column name="TUYENID" />
+			</basic>
+			<basic name="diaChiCoQuanHCSNTinhId">
+				<column name="DIACHICOQUANHCSNTINHID" />
+			</basic>
+			<basic name="nguoiDaiDienId">
+				<column name="NGUOIDAIDIENID" />
+			</basic>
+			<basic name="diaChiCoQuanHCSNHuyenId">
+				<column name="DIACHICOQUANHCSNHUYENID" />
+			</basic>
+			<basic name="hangId">
+				<column name="HANGID" />
+			</basic>
+			<basic name="coQuanQuanLyId">
+				<column name="COQUANQUANLYID" />
+			</basic>
+			<basic name="loaiId">
+				<column name="LOAIID" />
+			</basic>
+			<basic name="soQdThanhLap">
+				<column name="SOQDTHANHLAP" />
+			</basic>
+			<basic name="moTaDiaChi">
+				<column name="MOTADIACHI" />
+			</basic>
+			<basic name="tenNguoiDaiDien">
+				<column name="TENNGUOIDAIDIEN" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="chaId">
+				<column name="CHAID" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.CoQuanQuanLyModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="diaChi">
+				<column name="DIACHI" />
+			</basic>
+			<basic name="dienThoai">
+				<column name="DIENTHOAI" />
+			</basic>
+			<basic name="email">
+				<column name="EMAIL" />
+			</basic>
+			<basic name="fax">
+				<column name="FAX" />
+			</basic>
+			<basic name="website">
+				<column name="WEBSITE" />
+			</basic>
+			<basic name="noiBo">
+				<column name="NOIBO" />
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="donViHanhChinhId">
+				<column name="DONVIHANHCHINHID" />
+			</basic>
+			<basic name="capCoQuanQuanlyId">
+				<column name="CAPCOQUANQUANLYID" />
+			</basic>
+			<basic name="chaId">
+				<column name="CHAID" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="merchant">
+				<column name="MERCHANT" />
+			</basic>
+			<basic name="accessCode">
+				<column name="ACCESSCODE" />
+			</basic>
+			<basic name="secureSecret">
+				<column name="SECURE_SECRET" />
+			</basic>
+			<basic name="maCapSoBienNhan">
+				<column name="MACAPSOBIENNHAN" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.DonViHanhChinhModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="capDonViHanhChinhId">
+				<column name="CAPDONVIHANHCHINHID" />
+			</basic>
+			<basic name="chaId">
+				<column name="CHAID" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="quocGiaId">
+				<column name="QUOCGIAID" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.qlhc.model.impl.QuocGiaModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="ma">
+				<column name="MA" />
+			</basic>
+			<basic name="ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="phienBan">
+				<column name="PHIENBAN" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="vn.dtt.cmon.dao.nsd.model.impl.TaiKhoanNguoiDungModelImpl">
+		<attributes>
+			<id name="id">
+				<column name="ID" />
+			</id>
+			<basic name="tenDangNhap">
+				<column name="TENDANGNHAP" />
+			</basic>
+			<basic name="matKhau">
+				<column name="MATKHAU" />
+			</basic>
+			<basic name="tenNguoiDung">
+				<column name="TENNGUOIDUNG" />
+			</basic>
+			<basic name="cauHoiMatKhau">
+				<column name="CAUHOIMATKHAU" />
+			</basic>
+			<basic name="cauTraLoiMatKhau">
+				<column name="CAUTRALOIMATKHAU" />
+			</basic>
+			<basic name="email">
+				<column name="EMAIL" />
+			</basic>
+			<basic name="ngayTao">
+				<column name="NGAYTAO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="daXoa">
+				<column name="DAXOA" />
+			</basic>
+			<basic name="ngaySua">
+				<column name="NGAYSUA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nguoiTao">
+				<column name="NGUOITAO" />
+			</basic>
+			<basic name="nguoiSua">
+				<column name="NGUOISUA" />
+			</basic>
+			<basic name="trangThai">
+				<column name="TRANGTHAI" />
+			</basic>
+			<basic name="loaiDoiTuongId">
+				<column name="LOAIDOITUONGID" />
+			</basic>
+			<basic name="taiKhoanNguoiDungId">
+				<column name="TAIKHOANNGUOIDUNGID" />
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="vn.dtt.cmon.dao.cd.model.impl.CongDanImpl" name="CongDan">
+		<table name="CSMS_CONGDAN" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.cd.model.impl.DanTocImpl" name="DanToc">
+		<table name="CMON_DANTOC" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.cd.model.impl.DoiTuongSuDungImpl" name="DoiTuongSuDung">
+		<table name="CMON_LOAIDOITUONG" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.cd.model.impl.GioiTinhImpl" name="GioiTinh">
+		<table name="CMON_GIOITINH" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.cd.model.impl.TonGiaoImpl" name="TonGiao">
+		<table name="CMON_TONGIAO" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.cd.model.impl.YeuCauDangKyCongDanImpl" name="YeuCauDangKyCongDan">
+		<table name="csms_yeucaudangkycongdan" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.csms.model.impl.DoiTuongSuDungImpl" name="DoiTuongSuDung">
+		<table name="CMON_LOAIDOITUONG" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.csms.model.impl.YeuCauDangKyCongDanImpl" name="YeuCauDangKyCongDan">
+		<table name="csms_yeucaudangkycongdan" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.CapCoQuanQuanLyImpl" name="CapCoQuanQuanLy">
+		<table name="CMON_CAPCOQUANQUANLY" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.CapDonViHanhChinhImpl" name="CapDonViHanhChinh">
+		<table name="CMON_CAPDONVIHANHCHINH" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.ChucVu2VaiTroImpl" name="ChucVu2VaiTro">
+		<table name="CMON_CHUCVU2VAITRO" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.CoQuanHanhChinhSuNghiepImpl" name="CoQuanHanhChinhSuNghiep">
+		<table name="CMON_COQUANHANHCHINHSUNGHIEP" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.CoQuanQuanLyImpl" name="CoQuanQuanLy">
+		<table name="CMON_COQUANQUANLY" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.DonViHanhChinhImpl" name="DonViHanhChinh">
+		<table name="CMON_DONVIHANHCHINH" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.qlhc.model.impl.QuocGiaImpl" name="QuocGia">
+		<table name="CMON_QUOCGIA" />
+		<attributes />
+	</entity>
+	<entity class="vn.dtt.cmon.dao.nsd.model.impl.TaiKhoanNguoiDungImpl" name="TaiKhoanNguoiDung">
+		<table name="CMON_TAIKHOANNGUOIDUNG" />
+		<attributes />
+	</entity>
+</entity-mappings>
